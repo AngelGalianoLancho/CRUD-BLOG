@@ -1,0 +1,8 @@
+<h1>hola</h1>
+<div class="form-group">
+    <label for="title">Titulo</label>
+    <input formControlName="title" id="title" type="text" class="form-control">
+    <div *ngIf="f['title'].touched && f['title'].invalid" class="alert alert-danger">
+        <div *ngIf="f['title'].errors && f['title'].errors['required']"> El titulo no puede estar vacío </div>
+    </div>
+</div>
