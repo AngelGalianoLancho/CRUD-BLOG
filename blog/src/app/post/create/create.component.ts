@@ -22,7 +22,7 @@ export class CreateComponent implements OnInit{
     this.form = new FormGroup(
       {
         title: new FormControl('', [Validators.required]),
-        body: new FormControl('', [Validators.required])
+        body: new FormControl('', [Validators.required]),
       }
     )
   }
@@ -32,14 +32,13 @@ export class CreateComponent implements OnInit{
     return this.form.controls;
   }
   // Método submit (llamar al método correspondiente del servicio de conexión con la API)
-  
   submit (){
     this.postService.create(this.form.value).subscribe( 
       (data:any) => {
         alert("se ha creado el POST con exito");
         this.router.navigateByUrl('post');
     }
-    )
+    );
   }
   
 }

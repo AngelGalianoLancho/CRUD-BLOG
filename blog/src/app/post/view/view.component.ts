@@ -20,9 +20,9 @@ export class ViewComponent implements OnInit {
 
   ngOnInit() {
 
-    // this.postService.find(this.postVisualizadoId).subscribe((data: Post) => {
-    //   this.postVisualizado = data;
-    // })
+    this.postService.find(this.postVisualizadoId).subscribe((data: Post) => {
+      this.postVisualizado = data;
+    })
   }
 }
 

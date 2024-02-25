@@ -6,3 +6,10 @@
         <div *ngIf="f['title'].errors && f['title'].errors['required']"> El titulo no puede estar vacío </div>
     </div>
 </div>
+<div class="form-group">
+    <label for="body">Cuerpo</label>
+    <input formControlName="body" id="body" type="text" class="form-control">
+    <div *ngIf="f['body'].touched && f['body'].invalid" class="alert alert-danger">
+        <div *ngIf="f['body'].errors && f['body'].errors['required']"> El cuerpo no puede estar vacío </div>
+    </div>
+</div>

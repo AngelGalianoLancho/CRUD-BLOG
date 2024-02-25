@@ -1,0 +1,17 @@
+.btn-cyan {
+    color: black;
+    background-color: rgb(9, 230, 230);
+    border-color: rgb(9, 230, 230);
+    margin-right: 5px;
+}
+.btn-azul {
+    color: white;
+    background-color: rgba(9, 68, 230, 0.801);
+    border-color:  rgb(9, 68, 230, 0.801);
+    margin-right: 5px;
+}
+.btn-rojo {
+    color: white;
+    background-color: rgba(230, 9, 9, 0.801);
+    border-color:  rgb(230, 9, 9, 0.801);
+}

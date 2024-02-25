@@ -1,6 +1,6 @@
 <h1>Listado de Posts</h1>
 
-<a routerLink = "/post/create" class="btn btn-success mt-2 mb-2" >Crear Post</a>
+<a routerLink = "/post/create" routerLinkActive="active" class="btn btn-success mt-2 mb-2">Crear Post</a>
 
 <table class="table table-striped">
   <thead>
@@ -17,9 +17,9 @@
       <td>{{ post.title }}</td>
       <td>{{ post.body }}</td>
       <td>
-        <a [routerLink]="[post.id]" routerLinkActive="active">ver</a>
-        <a [routerLink]="[]" routerLinkActive="active">Editar</a>
-        <a [routerLink]="[]" routerLinkActive="active">Delete</a>
+        <a [routerLink]="[post.id]" routerLinkActive="active" class="btn btn-cyan mt-2 mb-2">ver</a>
+        <a [routerLink]="[]" routerLinkActive="active" class="btn btn-azul mt-2 mb-2">Editar</a>
+        <a [routerLink]="[]" routerLinkActive="active" class="btn btn-rojo mt-2 mb-2">Delete</a>
       </td>
     </tr>
   </tbody>

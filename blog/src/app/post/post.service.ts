@@ -42,6 +42,7 @@ export class PostService {
   find(id: number): Observable<any> {
     return this.httpClient.get(this.apiURL + 'posts/' + id);
   }
+  
     
   // ACTUALIZAR
   update(id: number, post: Post): Observable<any> {
